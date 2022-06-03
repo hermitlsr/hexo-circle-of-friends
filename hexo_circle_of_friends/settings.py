@@ -51,6 +51,7 @@ SETTINGS_FRIENDS_LINKS = {
         # 如果目标地址的后缀不在其中，就可以在这里添加
         # 比如 https://elizen.me/hello.xml ，填写：
         ["zgao", "https://zgao.top", "https://zgao.top/wp-content/uploads/2020/06/cropped-TIM%E6%88%AA%E5%9B%BE20200614153013-32x32.png", "hello.xml"],
+        ["林木木","https://immmmm.com/","https://immmmm.com/favicon.ico"],
     ]
 }
 
