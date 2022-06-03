@@ -17,8 +17,8 @@
 # 支持配置多个友链页面并指定不同主题策略，每个用{}分隔，它们会被同时爬取，数据保存在一起。***至少配置一个***
 LINK = [
     {
-        "link": "https://zfe.space/link/",  # 友链页地址1，修改为你的友链页地址
-        "theme": "butterfly"
+        "link": "https://www.hermitlsr.top/friends/",  # 友链页地址1，修改为你的友链页地址
+        "theme": "stellar"
     },
     #     {
     #     "link": "https://noionion.top/link/",  # 友链页地址2
@@ -40,17 +40,17 @@ LINK = [
 #       avatar：必填，头像地址
 #       suffix：选填，自定义订阅后缀，主要针对不规范的网站订阅后缀，见示例2
 SETTINGS_FRIENDS_LINKS = {
-    "enable": False,
+    "enable": True,
     "json_api": "",
     "list": [
         # 示例1：
-        ["贰猹の小窝", "https://noionion.top/", "https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg"],
-        ["Akilarの糖果屋", "https://akilar.top/", "https://akilar.top/images/headimage.png"],
+        ["xaoxuu", "https://xaoxuu.com", "https://fastly.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png"],
+        ["Colsrch", "https://colsrch.cn/", "https://fastly.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg"],
         # 示例2：使用suffix的配置如下
         # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
         # 如果目标地址的后缀不在其中，就可以在这里添加
         # 比如 https://elizen.me/hello.xml ，填写：
-        ["elizen", "https://elizen.me/", "https://akilar.top/images/headimage.png", "hello.xml"],
+        ["zgao", "https://zgao.top", "https://zgao.top/wp-content/uploads/2020/06/cropped-TIM%E6%88%AA%E5%9B%BE20200614153013-32x32.png", "hello.xml"],
     ]
 }
 
@@ -67,10 +67,10 @@ GITEE_FRIENDS_LINKS = {
 # get links from github
 # 从github issue中获取友链
 GITHUB_FRIENDS_LINKS = {
-    "enable": False,  # True 开启github issue兼容
-    "type": "normal",  # volantis/stellar用户请在这里填写volantis
-    "owner": "ccknbc",  # 填写你的github用户名
-    "repo": "ccknbc-actions",  # 填写你的github仓库名
+    "enable": True,  # True 开启github issue兼容
+    "type": "volantis",  # volantis/stellar用户请在这里填写volantis
+    "owner": "hermitlsr",  # 填写你的github用户名
+    "repo": "friends",  # 填写你的github仓库名
     "state": "open"  # 填写抓取的issue状态(open/closed)
 }
 
@@ -85,7 +85,7 @@ BLOCK_SITE = [
 HTTP_PROXY = False
 
 # 过期文章清除（天）
-OUTDATE_CLEAN = 60
+OUTDATE_CLEAN = 720
 
 # 存储方式，可选项：leancloud，mysql，sqlite，mongodb；默认为leancloud
 DATABASE = "leancloud"
